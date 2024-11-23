@@ -1,0 +1,180 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hello World | 浅的小屋</title><meta name="author" content="浅"><meta name="copyright" content="浅"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="objectionobjection的介绍objection是一个运行时移动探索工具包，观察类方法，报告执行情况，由Frida提供支持。支持iOS 和 Android。 objection的安装1234Python 3.7.1pip3 install frida&#x3D;&#x3D;12.8.0pip3 install frida-tools&#x3D;&#x3D;5.3.0pip3 install objection&#x3D;&#x3D;1.8.4">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello World">
+<meta property="og:url" content="https://1ncharles.github.io/2013/07/13/objection/index.html">
+<meta property="og:site_name" content="浅的小屋">
+<meta property="og:description" content="objectionobjection的介绍objection是一个运行时移动探索工具包，观察类方法，报告执行情况，由Frida提供支持。支持iOS 和 Android。 objection的安装1234Python 3.7.1pip3 install frida&#x3D;&#x3D;12.8.0pip3 install frida-tools&#x3D;&#x3D;5.3.0pip3 install objection&#x3D;&#x3D;1.8.4">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://1ncharles.github.io/img/head.jpg">
+<meta property="article:published_time" content="2013-07-13T12:46:25.000Z">
+<meta property="article:modified_time" content="2024-11-23T08:25:39.688Z">
+<meta property="article:author" content="浅">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://1ncharles.github.io/img/head.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://1ncharles.github.io/2013/07/13/objection/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hello World',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/readPercent.css?1"><link rel="stylesheet" href="/css/custom.css?1" media="defer" onload="this.media='all'"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/img/bg.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">浅的小屋</span></a><a class="nav-page-title" href="/"><span class="site-name">Hello World</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Hello World</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2013-07-13T12:46:25.000Z" title="发表于 2013-07-13 20:46:25">2013-07-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-11-23T08:25:39.688Z" title="更新于 2024-11-23 16:25:39">2024-11-23</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="objection"><a href="#objection" class="headerlink" title="objection"></a>objection</h1><h3 id="objection的介绍"><a href="#objection的介绍" class="headerlink" title="objection的介绍"></a>objection的介绍</h3><p>objection是一个运行时移动探索工具包，观察类方法，报告执行情况，由Frida提供支持。支持iOS 和 Android。</p>
+<h3 id="objection的安装"><a href="#objection的安装" class="headerlink" title="objection的安装"></a>objection的安装</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Python <span class="number">3.7</span><span class="number">.1</span></span><br><span class="line">pip3 install frida==<span class="number">12.8</span><span class="number">.0</span></span><br><span class="line">pip3 install frida-tools==<span class="number">5.3</span><span class="number">.0</span></span><br><span class="line">pip3 install objection==<span class="number">1.8</span><span class="number">.4</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><p>1.手机端或者模拟器开启对应版本的frida-server</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">┌──(root㉿r0env)-[~]</span><br><span class="line">└─<span class="comment"># adb shell</span></span><br><span class="line">bullhead:/ $ su                                                                           </span><br><span class="line">bullhead:/ <span class="comment"># cd data/local/tmp/                                                             </span></span><br><span class="line">bullhead:/data/local/tmp <span class="comment"># ./frida-server</span></span><br></pre></td></tr></table></figure>
+
+<p>2.获取包名，方式有很多种，我喜欢用以下方式，不仅可以看到包名，而且还能看到当前界面的class,实现了初步的快速定位</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">adb shell dumpsys window | grep CurrentFocus</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 结果：</span></span><br><span class="line">mCurrentFocus=Window&#123;c46d96e u0 com.example.androiddemo/com.example.androiddemo.Activity.LoginActivity&#125;</span><br></pre></td></tr></table></figure>
+
+<p>3.打开方式有两种，分别是包名和指定ip和端口的连接。包名应该是使用率比较高的。（都是attach模式）</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 包名</span></span><br><span class="line">objection -g com.example.androiddemo explore</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 端口</span></span><br><span class="line"><span class="comment">## frida 的开启模式</span></span><br><span class="line">./frida-server -l <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>:<span class="number">12306</span></span><br><span class="line"><span class="comment">## 指定ip和端口连接</span></span><br><span class="line">objection -N -h <span class="number">192.168</span><span class="number">.31</span><span class="number">.166</span> -p <span class="number">5555</span> -g com.example.androiddemo explore</span><br></pre></td></tr></table></figure>
+
+<p>4.spawn模式启动。–startup-command “hook的代码段”</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">objection -g com.example.androiddemo explore --startup-command <span class="string">&quot;android hooking watch class com.example.androiddemo.Activity.LoginActivity --dump-args --dump-backtrace --dump-return&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="Memory-指令，提取内存信息"><a href="#Memory-指令，提取内存信息" class="headerlink" title="Memory 指令，提取内存信息"></a>Memory 指令，提取内存信息</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">memory <span class="built_in">list</span> modules  // 查看内存中加载的库</span><br><span class="line">memory <span class="built_in">list</span> exports libssl.so  // 查看库的导出函数</span><br><span class="line">memory <span class="built_in">list</span> exports libart.so --json /root/libart.json //将结果保存到json文件中</span><br><span class="line">memory search --string --offsets-only //搜索内存</span><br></pre></td></tr></table></figure>
+
+<h3 id="任务管理"><a href="#任务管理" class="headerlink" title="任务管理"></a>任务管理</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看任务列表</span></span><br><span class="line">jobs <span class="built_in">list</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># 关闭任务</span></span><br><span class="line">jobs kill jobid</span><br></pre></td></tr></table></figure>
+
+<h3 id="root指令"><a href="#root指令" class="headerlink" title="root指令"></a>root指令</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">android root disable //尝试关闭app的root检测</span><br><span class="line">android root simulate //尝试模拟root环境</span><br></pre></td></tr></table></figure>
+
+<h3 id="关闭-ssl-效验"><a href="#关闭-ssl-效验" class="headerlink" title="关闭 ssl 效验"></a>关闭 ssl 效验</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android sslpinning disable</span><br></pre></td></tr></table></figure>
+
+<h3 id="heap-内存堆搜索与执行"><a href="#heap-内存堆搜索与执行" class="headerlink" title="heap 内存堆搜索与执行"></a>heap 内存堆搜索与执行</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 堆内存中搜索指定类的实例, 可以获取该类的实例id</span></span><br><span class="line">android heap search instances com.example.androiddemo.Activity.LoginActivity</span><br><span class="line"><span class="comment"># 返回：</span></span><br><span class="line">Class instance enumeration complete <span class="keyword">for</span> com.example.androiddemo.Activity.LoginActivity</span><br><span class="line">Handle  Class                                           toString()</span><br><span class="line">------  ----------------------------------------------  ------------------------------</span><br><span class="line"><span class="number">0x1fba</span>  com.example.androiddemo.Activity.LoginActivity  com.example.androiddemo.Activity.LoginActivity@d8a5160</span><br><span class="line"><span class="comment"># 执行实例方法</span></span><br><span class="line">android heap execute <span class="number">0x1fba</span>  a</span><br></pre></td></tr></table></figure>
+
+<h3 id="强制启动activity"><a href="#强制启动activity" class="headerlink" title="强制启动activity"></a>强制启动activity</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android intent launch_activity com.example.androiddemo.Activity.FridaActivity1</span><br></pre></td></tr></table></figure>
+
+<h3 id="hook-内存漫游"><a href="#hook-内存漫游" class="headerlink" title="hook 内存漫游"></a>hook 内存漫游</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 枚举activity</span></span><br><span class="line">android hooking <span class="built_in">list</span> activities</span><br><span class="line"><span class="comment"># 列出内存中所有的类</span></span><br><span class="line">android hooking <span class="built_in">list</span> classes</span><br><span class="line"><span class="comment"># 列出类的所有方法</span></span><br><span class="line">android hooking <span class="built_in">list</span> class_methods 包名.类名</span><br><span class="line"><span class="comment"># 在内存中所有已加载的类中搜索包含特定关键词的类</span></span><br><span class="line">android hooking search classes 包名包含的关键词</span><br><span class="line"><span class="comment"># hook类的所有方法</span></span><br><span class="line">android hooking watch <span class="keyword">class</span> <span class="title class_">包名</span>.类名</span><br><span class="line"><span class="comment"># hook 类的方法，默认会Hook方法的所有重载</span></span><br><span class="line">android hooking watch class_method 包名.类名.方法</span><br><span class="line"><span class="comment"># 如果只需hook其中一个重载函数 指定参数类型 多个参数用逗号分隔</span></span><br><span class="line">android hooking watch class_method 包名.类名.方法 <span class="string">&quot;参数1,参数2&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># objection日志文件位置</span></span><br><span class="line">~/.objection/objection.log</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 命令历史文件位置</span></span><br><span class="line">~/.objection/objection_history</span><br></pre></td></tr></table></figure>
+
+<h2 id="0x01-Wallbreaker插件的使用"><a href="#0x01-Wallbreaker插件的使用" class="headerlink" title="0x01 Wallbreaker插件的使用"></a>0x01 Wallbreaker插件的使用</h2><p><a target="_blank" rel="noopener" href="https://github.com/hluwa/Wallbreaker">Wallbreaker</a>是一个实时分析 Java 堆的有用工具，由frida提供支持。提供一些命令从内存中搜索对象或类，并精美地可视化目标的真实结构。</p>
+<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p ~/.objection/plugins/</span><br><span class="line">git clone https://github.com/hluwa/Wallbreaker ~/.objection/plugins/Wallbreaker</span><br></pre></td></tr></table></figure>
+
+<h3 id="加载"><a href="#加载" class="headerlink" title="加载"></a>加载</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 第一种方法：</span></span><br><span class="line">objection -g com.example.androiddemo explore  -P ~/.objection/plugins</span><br><span class="line"><span class="comment"># 第二种方法：</span></span><br><span class="line">objection -g com.example.androiddemo explore</span><br><span class="line">plugin load ~/.objection/plugins/Wallbreaker</span><br></pre></td></tr></table></figure>
+
+<h3 id="命令使用"><a href="#命令使用" class="headerlink" title="命令使用"></a>命令使用</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 搜索类</span></span><br><span class="line">plugin wallbreaker objectsearch LoginActivity</span><br><span class="line">//返回：</span><br><span class="line">com.example.androiddemo.Activity.LoginActivity</span><br><span class="line">com.example.androiddemo.Activity.LoginActivity$<span class="number">1</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># 根据类名搜索内存中已经被创建的实例，列出 handle 和 toString() 的结果 --fullname 打印完整的包名</span></span><br><span class="line">plugin wallbreaker classdump com.example.androiddemo.Activity.LoginActivity --fullname</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 搜索对象</span></span><br><span class="line">plugin wallbreaker objectsearch com.example.androiddemo.Activity.LoginActivity</span><br><span class="line">//返回：</span><br><span class="line">[<span class="number">0x2262</span>]: com.example.androiddemo.Activity.LoginActivity@d8a5160</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 查看对象的一些属性和方法</span></span><br><span class="line">plugin wallbreaker objectdump <span class="number">0x2262</span> --fullname</span><br></pre></td></tr></table></figure>
+
+<p>​<img src="/assets/network-asset-961239_MZEJ5JET839EU4B-20241123161702-50d4iam.png" alt="图片描述">​</p>
+<h2 id="0x02-FRIDA-DEXDump-插件的使用"><a href="#0x02-FRIDA-DEXDump-插件的使用" class="headerlink" title="0x02 FRIDA-DEXDump 插件的使用"></a>0x02 FRIDA-DEXDump 插件的使用</h2><p><a target="_blank" rel="noopener" href="https://github.com/hluwa/FRIDA-DEXDump">frida-dexdump</a> ：快速的从内存中搜索和转存DEX</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/hluwa/FRIDA-DEXDump ~/.objection/plugins/dexdump</span><br></pre></td></tr></table></figure>
+
+<h3 id="启动-1"><a href="#启动-1" class="headerlink" title="启动"></a>启动</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugin dexdump dump</span><br></pre></td></tr></table></figure>
+
+<h3 id="返回值："><a href="#返回值：" class="headerlink" title="返回值："></a>返回值：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[DEXDump]: DexSize=<span class="number">0x1d1f50</span>, DexMd5=7ed584af40ef0b1bc211688395e92c98,SavePath=/root/.objection/plugins/com.example.androidemo/<span class="number">0x7e38c0201c</span>.dex</span><br></pre></td></tr></table></figure>
+
+<h2 id="0x03-watch-events-插件的使用"><a href="#0x03-watch-events-插件的使用" class="headerlink" title="0x03 watch_events 插件的使用"></a>0x03 watch_events 插件的使用</h2><h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/hluwa/objection-plugins ~/.objection/plugins  --recurse-submodules</span><br><span class="line"> </span><br><span class="line">objection -g com.app.name explore -P ~/.objection/plugins</span><br><span class="line"> </span><br><span class="line">这里安装成功后，也会自动加载 wallbreaker 、dexdump</span><br></pre></td></tr></table></figure>
+
+<p>开启后，点击屏幕按钮，比如这里我提交了登录按钮，打印出来它的类，实现了快速定位。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">plugin watch_event onclick</span><br><span class="line"> </span><br><span class="line">com.example.androiddemo on (google: <span class="number">8.1</span><span class="number">.0</span>) [usb] <span class="comment"># (agent) [WatchEvent] onClick: com.example.androiddemo.Activity.LoginActivity$1</span></span><br><span class="line">                                                                                                                                                                                                   </span><br></pre></td></tr></table></figure>
+
+<p>‍</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://1ncharles.github.io">浅</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://1ncharles.github.io/2013/07/13/objection/">https://1ncharles.github.io/2013/07/13/objection/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://1ncharles.github.io" target="_blank">浅的小屋</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/head.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2024/11/23/buu1/" title="buu第一页wp"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">buu第一页wp</div></div><div class="info-2"><div class="info-item-1">buu1 Easyre  main函数  reverse1  ​​ {hello_world}中‘o’被0替换  reverse2  ​​ {hacking_for_fun}  i r被替换为1  内涵的软件  ​​ 发现类似flag的字符串，用flag{}包住得到flag  新年快乐  ​​ upx  Xor  ​​ 对global再进行一次异或得到flag Exp: ​​  reverse3  ​​ 先对输入字符串base64编码，再字符串加密 过程反向即可得到flag Exp: ​​  Hello world  Mainactivity类中  不一样的flag  ​​ 上下左右4种操作，应该是迷宫题 ​​ 字符串可以分为5行 *1111 01000 01010 00010 1111# ​​ 遇到1退出 遇到#正确提升 说明要从*沿0走到# Flag为flag{222441144222}  SimpleRev  ​​ 先把text...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">浅</div><div class="author-info-description">喵喵喵~</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/1ncharles"><i></i><span>前往小家...</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/1nCharles" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:muxiaofengxi@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget" id="newYear"><div class="item-headline"><i></i><span></span></div><div class="item-content"><div id="newYear-main"><div class="mask"></div> <p class="title"></p> <div class="newYear-time"></div> <p class="today" style="text-align: right;"></p> </div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#objection"><span class="toc-number">1.</span> <span class="toc-text">objection</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#objection%E7%9A%84%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.0.1.</span> <span class="toc-text">objection的介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#objection%E7%9A%84%E5%AE%89%E8%A3%85"><span class="toc-number">1.0.2.</span> <span class="toc-text">objection的安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8"><span class="toc-number">1.0.3.</span> <span class="toc-text">启动</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">基本用法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Memory-%E6%8C%87%E4%BB%A4%EF%BC%8C%E6%8F%90%E5%8F%96%E5%86%85%E5%AD%98%E4%BF%A1%E6%81%AF"><span class="toc-number">1.1.1.</span> <span class="toc-text">Memory 指令，提取内存信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-number">1.1.2.</span> <span class="toc-text">任务管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#root%E6%8C%87%E4%BB%A4"><span class="toc-number">1.1.3.</span> <span class="toc-text">root指令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E9%97%AD-ssl-%E6%95%88%E9%AA%8C"><span class="toc-number">1.1.4.</span> <span class="toc-text">关闭 ssl 效验</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#heap-%E5%86%85%E5%AD%98%E5%A0%86%E6%90%9C%E7%B4%A2%E4%B8%8E%E6%89%A7%E8%A1%8C"><span class="toc-number">1.1.5.</span> <span class="toc-text">heap 内存堆搜索与执行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%BA%E5%88%B6%E5%90%AF%E5%8A%A8activity"><span class="toc-number">1.1.6.</span> <span class="toc-text">强制启动activity</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hook-%E5%86%85%E5%AD%98%E6%BC%AB%E6%B8%B8"><span class="toc-number">1.1.7.</span> <span class="toc-text">hook 内存漫游</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A5%E5%BF%97"><span class="toc-number">1.1.8.</span> <span class="toc-text">日志</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x01-Wallbreaker%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.2.</span> <span class="toc-text">0x01 Wallbreaker插件的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="toc-number">1.2.1.</span> <span class="toc-text">下载安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E8%BD%BD"><span class="toc-number">1.2.2.</span> <span class="toc-text">加载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8"><span class="toc-number">1.2.3.</span> <span class="toc-text">命令使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x02-FRIDA-DEXDump-%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.3.</span> <span class="toc-text">0x02 FRIDA-DEXDump 插件的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">1.3.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8-1"><span class="toc-number">1.3.2.</span> <span class="toc-text">启动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%94%E5%9B%9E%E5%80%BC%EF%BC%9A"><span class="toc-number">1.3.3.</span> <span class="toc-text">返回值：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x03-watch-events-%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.4.</span> <span class="toc-text">0x03 watch_events 插件的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-1"><span class="toc-number">1.4.1.</span> <span class="toc-text">安装</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By 浅</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script defer data-pjax src="/js/readPercent.js"></script><script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script><script defer src="/js/lunar.js"></script><script defer src="/js/day.js"></script><script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script><script async data-pjax src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script><script async data-pjax src="/js/year.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
