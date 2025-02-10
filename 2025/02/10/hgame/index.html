@@ -1,0 +1,187 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>hgame WP | Britney的小屋</title><meta name="author" content="Britney"><meta name="copyright" content="Britney"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Misc​Computer cleaner​检材删掉了（呜呜呜，硬盘要被我塞满了 vmware打开虚拟机发现apache2服务，找到log，发现php得到第一段flag 直接访问攻击者ip得到第二段 log里面看到对一个文件进行操作，得到第三段flag ‍ WEB​Level 24 Pacman​js被混淆了，不过只看字符串发现几个base64加密后的字符串，尝试解密 ​​ ​​ RE​尊嘟假嘟​">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hgame WP">
+<meta property="og:url" content="https://1ncharles.github.io/2025/02/10/hgame/index.html">
+<meta property="og:site_name" content="Britney的小屋">
+<meta property="og:description" content="Misc​Computer cleaner​检材删掉了（呜呜呜，硬盘要被我塞满了 vmware打开虚拟机发现apache2服务，找到log，发现php得到第一段flag 直接访问攻击者ip得到第二段 log里面看到对一个文件进行操作，得到第三段flag ‍ WEB​Level 24 Pacman​js被混淆了，不过只看字符串发现几个base64加密后的字符串，尝试解密 ​​ ​​ RE​尊嘟假嘟​">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://1ncharles.github.io/img/head.jpg">
+<meta property="article:published_time" content="2025-02-10T04:25:48.283Z">
+<meta property="article:modified_time" content="2025-02-10T04:26:22.958Z">
+<meta property="article:author" content="Britney">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://1ncharles.github.io/img/head.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://1ncharles.github.io/2025/02/10/hgame/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'hgame WP',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/readPercent.css?1"><link rel="stylesheet" href="/css/custom.css?1" media="defer" onload="this.media='all'"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/img/bg.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Britney的小屋</span></a><a class="nav-page-title" href="/"><span class="site-name">hgame WP</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">hgame WP</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-02-10T04:25:48.283Z" title="发表于 2025-02-10 12:25:48">2025-02-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-10T04:26:22.958Z" title="更新于 2025-02-10 12:26:22">2025-02-10</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">856</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h1><h2 id="​Computer-cleaner​"><a href="#​Computer-cleaner​" class="headerlink" title="​Computer cleaner​"></a>​<code>Computer cleaner</code>​</h2><p>检材删掉了（呜呜呜，硬盘要被我塞满了</p>
+<p>vmware打开虚拟机发现apache2服务，找到log，发现php得到第一段flag</p>
+<p>直接访问攻击者ip得到第二段</p>
+<p>log里面看到对一个文件进行操作，得到第三段flag</p>
+<p>‍</p>
+<h1 id="WEB"><a href="#WEB" class="headerlink" title="WEB"></a>WEB</h1><h2 id="​Level-24-Pacman​"><a href="#​Level-24-Pacman​" class="headerlink" title="​Level 24 Pacman​"></a>​<code>Level 24 Pacman</code>​</h2><p>js被混淆了，不过只看字符串发现几个base64加密后的字符串，尝试解密</p>
+<p>​<img src="/assets/image-20250210115925-bhwdxn6.png" alt="image">​</p>
+<p>​<img src="/assets/image-20250210115955-ajj61ky.png" alt="image">​</p>
+<h1 id="RE"><a href="#RE" class="headerlink" title="RE"></a>RE</h1><h2 id="​尊嘟假嘟​"><a href="#​尊嘟假嘟​" class="headerlink" title="​尊嘟假嘟​"></a>​<code>尊嘟假嘟</code>​</h2><p>jadx打开，分析下</p>
+<p>1个activity有两种<code>Fragment</code>​</p>
+<p>​<img src="/assets/21e2cc4e89a61bd9a674ae45c392c34e-20250204190251-5yiqxay.png" alt="21e2cc4e89a61bd9a674ae45c392c34e">​</p>
+<p>一个尊都一个假嘟</p>
+<p>看下具体逻辑</p>
+<p>​<img src="/assets/image-20250204190320-0doqv3s.png" alt="image">​</p>
+<p>按钮和ImageView注册了点击事件，还有个自定义toast，进去看下</p>
+<p>​<img src="/assets/image-20250204190427-pnepiob.png" alt="image">​</p>
+<p>发现关键check，跟进</p>
+<p>​<img src="/assets/image-20250204190500-lfcqqi7.png" alt="image">​</p>
+<p>动态加载dex</p>
+<p>​<img src="/assets/image-20250204190625-9xb7v5k.png" alt="image">​</p>
+<p>assets里面发现加密后的dex</p>
+<p>这里其实方法有很多</p>
+<p>1.frida hook loadDexFile通杀动态加载dex</p>
+<p>2.修改smali，不让dex删除</p>
+<p>3.分析so算法，进行解密</p>
+<p>4.内存dump</p>
+<p>​<img src="/assets/image-20250204191146-n8lm7ka.png" alt="image">​</p>
+<p>一个base64算法</p>
+<p>接下来分析check</p>
+<p>​<img src="/assets/image-20250204191311-0wh1cqo.png" alt="image">​</p>
+<p>jni_onload动态注册，init_array也没有骚操作</p>
+<p>​<img src="/assets/image-20250204191348-zyaw1xh.png" alt="image">​</p>
+<p>算法挺简单的，标准rc4</p>
+<p>​<img src="/assets/image-20250204191428-6kwf5o7.png" alt="image">​</p>
+<p>密码是这里的ZunduJiadu经过上面的base64算法编码的结果</p>
+<p>密码不确定，只能爆破了</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="type">String</span> <span class="variable">str1</span> <span class="operator">=</span> <span class="string">&quot;0.o&quot;</span>;</span><br><span class="line">    <span class="keyword">static</span> <span class="type">String</span> <span class="variable">str2</span> <span class="operator">=</span> <span class="string">&quot;o.0&quot;</span>;</span><br><span class="line">    <span class="keyword">static</span> <span class="type">String</span> <span class="variable">str3</span> <span class="operator">=</span> <span class="string">&quot;The length is too large&quot;</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">zundujiadu</span> <span class="variable">zundujiadu</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">zundujiadu</span>();</span><br><span class="line">        generate(<span class="string">&quot;&quot;</span>,<span class="number">0</span>);</span><br><span class="line">        generate(str3,<span class="number">9</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> String <span class="title function_">generate</span><span class="params">(String str,<span class="type">int</span> i)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (i==<span class="number">12</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> str;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(zundujiadu.encode(str+str1.toString()));</span><br><span class="line">        System.out.println(zundujiadu.encode(str+str2.toString()));</span><br><span class="line"></span><br><span class="line">        generate(str+str1,i+<span class="number">1</span>);</span><br><span class="line">        generate(str+str2,i+<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">return</span> str;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>获取所有可能的key，批量解密，得到flag</p>
+<p>‍</p>
+<p>‍</p>
+<h2 id="Turtle​"><a href="#Turtle​" class="headerlink" title="Turtle​"></a><code>Turtle</code>​</h2><p>有个upx壳，修复了特征upx -d还是脱不下来，只好手脱了，参考<a target="_blank" rel="noopener" href="https://note.youdao.com/ynoteshare/index.html?id=4cf3674c623238e8c9afba857c1755d1&type=note&_time=1738644658827">upx手动脱壳及其UPX修改的特征.note</a></p>
+<p>​<img src="/assets/image-20250210121022-tmnjphj.png" alt="image">​</p>
+<p>经过了两次rc4，直接解密即可</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">rc4_decrypt</span>(<span class="params">cipher, key</span>):</span><br><span class="line">    S = <span class="built_in">list</span>(<span class="built_in">range</span>(<span class="number">256</span>))</span><br><span class="line">    j = <span class="number">0</span></span><br><span class="line">    <span class="comment"># KSA</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">256</span>):</span><br><span class="line">        j = (j + S[i] + key[i % <span class="built_in">len</span>(key)]) % <span class="number">256</span></span><br><span class="line">        S[i], S[j] = S[j], S[i]</span><br><span class="line">  </span><br><span class="line">    <span class="comment"># PRGA</span></span><br><span class="line">    i = j = <span class="number">0</span></span><br><span class="line">    plain = []</span><br><span class="line">    <span class="keyword">for</span> byte <span class="keyword">in</span> cipher:</span><br><span class="line">        i = (i + <span class="number">1</span>) % <span class="number">256</span></span><br><span class="line">        j = (j + S[i]) % <span class="number">256</span></span><br><span class="line">        S[i], S[j] = S[j], S[i]</span><br><span class="line">        k = S[(S[i] + S[j]) % <span class="number">256</span>]</span><br><span class="line">        plain.append(byte ^ k)</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">bytes</span>(plain)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 解密Key</span></span><br><span class="line">key1 = <span class="string">b&quot;yekyek&quot;</span></span><br><span class="line">cipher_key = <span class="built_in">bytes</span>([<span class="number">0xCD</span>, <span class="number">0x8F</span>, <span class="number">0x25</span>, <span class="number">0x3D</span>, <span class="number">0xE1</span>, <span class="number">0x51</span>, <span class="number">0x4A</span>])</span><br><span class="line">decrypted_key = rc4_decrypt(cipher_key, key1)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Decrypted Key: <span class="subst">&#123;decrypted_key&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">rc4_decryp1</span>(<span class="params">cipher, key</span>):</span><br><span class="line">    S = <span class="built_in">list</span>(<span class="built_in">range</span>(<span class="number">256</span>))</span><br><span class="line">    j = <span class="number">0</span></span><br><span class="line">    <span class="comment"># KSA</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">256</span>):</span><br><span class="line">        j = (j + S[i] + key[i % <span class="built_in">len</span>(key)]) % <span class="number">256</span></span><br><span class="line">        S[i], S[j] = S[j], S[i]</span><br><span class="line">  </span><br><span class="line">    <span class="comment"># PRGA</span></span><br><span class="line">    i = j = <span class="number">0</span></span><br><span class="line">    plain = []</span><br><span class="line">    <span class="keyword">for</span> byte <span class="keyword">in</span> cipher:</span><br><span class="line">        i = (i + <span class="number">1</span>) % <span class="number">256</span></span><br><span class="line">        j = (j + S[i]) % <span class="number">256</span></span><br><span class="line">        S[i], S[j] = S[j], S[i]</span><br><span class="line">        k = S[(S[i] + S[j]) % <span class="number">256</span>]</span><br><span class="line">        plain.append((byte + k)%<span class="number">256</span>)</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">bytes</span>(plain)</span><br><span class="line"><span class="comment"># 解密Flag</span></span><br><span class="line">cipher_flag = <span class="built_in">bytes</span>([</span><br><span class="line">  <span class="number">0xF8</span>, <span class="number">0xD5</span>, <span class="number">0x62</span>, <span class="number">0xCF</span>, <span class="number">0x43</span>, <span class="number">0xBA</span>, <span class="number">0xC2</span>, <span class="number">0x23</span>, <span class="number">0x15</span>, <span class="number">0x4A</span>, </span><br><span class="line">  <span class="number">0x51</span>, <span class="number">0x10</span>, <span class="number">0x27</span>, <span class="number">0x10</span>, <span class="number">0xB1</span>, <span class="number">0xCF</span>, <span class="number">0xC4</span>, <span class="number">0x09</span>, <span class="number">0xFE</span>, <span class="number">0xE3</span>, </span><br><span class="line">  <span class="number">0x9F</span>, <span class="number">0x49</span>, <span class="number">0x87</span>, <span class="number">0xEA</span>, <span class="number">0x59</span>, <span class="number">0xC2</span>, <span class="number">0x07</span>, <span class="number">0x3B</span>, <span class="number">0xA9</span>, <span class="number">0x11</span>, </span><br><span class="line">  <span class="number">0xC1</span>, <span class="number">0xBC</span>, <span class="number">0xFD</span>, <span class="number">0x4B</span>, <span class="number">0x57</span>, <span class="number">0xC4</span>, <span class="number">0x7E</span>, <span class="number">0xD0</span>, <span class="number">0xAA</span>, <span class="number">0x0A</span></span><br><span class="line">])</span><br><span class="line">decrypted_flag = rc4_decryp1(cipher_flag, decrypted_key)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Decrypted Flag: <span class="subst">&#123;decrypted_flag.decode()&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="​Delta-Erro0000ors​"><a href="#​Delta-Erro0000ors​" class="headerlink" title="​Delta Erro0000ors​"></a>​<code>Delta Erro0000ors</code>​</h2><p>非常好的题，使我的大脑旋转</p>
+<p>exe有个try catch修复一下</p>
+<p>​<img src="/assets/image-20250210121356-73usikh.png" alt="image">​</p>
+<p>加载了msdelta，进行动态的修补，delta被硬编码在文件中</p>
+<p>​<img src="/assets/image-20250210121457-vtifyvn.png" alt="image">​</p>
+<p>注意到储存md5的地方信息已经被修改，那就要绕过校验或者干掉校验</p>
+<p><a target="_blank" rel="noopener" href="https://1k0ct.github.io/2024/04/29/Windows%E5%B7%AE%E5%BC%82%E5%8C%96%E8%A1%A5%E4%B8%81MSDelta%E4%B9%8B%E7%A0%94%E7%A9%B6/">Windows差异化补丁MSDelta之研究 | Ikoct的饮冰室</a></p>
+<p>本来想绕过的，没想到不太行（我是采购呜呜呜</p>
+<p>只能patch掉msdelta校验的地方了，由于是微软的dll，所以网上可以直接下载dll的pdb辅助分析</p>
+<p>最终在compo::CheckBuffersIdentityFactory::CheckBuffersIdentityComponent::InternalProcess找到校验处</p>
+<p>patch掉if判断即可干掉校验</p>
+<p>​<img src="/assets/image-20250210122334-9plgcig.png" alt="image">​</p>
+<p>最后根据判断这个解密（这里别忘记String最后的\0</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://1ncharles.github.io">Britney</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://1ncharles.github.io/2025/02/10/hgame/">https://1ncharles.github.io/2025/02/10/hgame/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://1ncharles.github.io" target="_blank">Britney的小屋</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/head.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/02/10/VNCTF%20WP/" title="VNCTF WP"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">VNCTF WP</div></div><div class="info-2"><div class="info-item-1">easymath​Ai大法(doge) 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849from sympy import symbols, solve# 定义变量x = symbols(&#x27;x&#x27;)# 多项式系数coeff_2 = 15264966144147258587171776703005926730518438603688487721465coeff_1 = 76513250180666948190254989703768338299723386154619468700730085586057638716434556720233473454400881002065319569292923N =...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Britney</div><div class="author-info-description">喵喵喵~</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/1ncharles"><i></i><span>前往小家...</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/1nCharles" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:muxiaofengxi@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget" id="newYear"><div class="item-headline"><i></i><span></span></div><div class="item-content"><div id="newYear-main"><div class="mask"></div> <p class="title"></p> <div class="newYear-time"></div> <p class="today" style="text-align: right;"></p> </div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Misc"><span class="toc-number">1.</span> <span class="toc-text">Misc</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%8BComputer-cleaner%E2%80%8B"><span class="toc-number">1.1.</span> <span class="toc-text">​Computer cleaner​</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#WEB"><span class="toc-number">2.</span> <span class="toc-text">WEB</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%8BLevel-24-Pacman%E2%80%8B"><span class="toc-number">2.1.</span> <span class="toc-text">​Level 24 Pacman​</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#RE"><span class="toc-number">3.</span> <span class="toc-text">RE</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%8B%E5%B0%8A%E5%98%9F%E5%81%87%E5%98%9F%E2%80%8B"><span class="toc-number">3.1.</span> <span class="toc-text">​尊嘟假嘟​</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Turtle%E2%80%8B"><span class="toc-number">3.2.</span> <span class="toc-text">Turtle​</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%8BDelta-Erro0000ors%E2%80%8B"><span class="toc-number">3.3.</span> <span class="toc-text">​Delta Erro0000ors​</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By Britney</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script defer data-pjax src="/js/readPercent.js"></script><script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script><script defer src="/js/lunar.js"></script><script defer src="/js/day.js"></script><script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script><script async data-pjax src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script><script async data-pjax src="/js/year.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
