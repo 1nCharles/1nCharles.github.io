@@ -240,7 +240,7 @@ if (true) {
 <h2 id="刷入编译好的aosp"><a href="#刷入编译好的aosp" class="headerlink" title="刷入编译好的aosp"></a>刷入编译好的aosp</h2><p>编译好的文件在out&#x2F;target&#x2F;product&#x2F;oriole目录下</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">adb reboot bootloader</span><br><span class="line">ANDROID_PRODUCT_OUT=$aosp_PATH/out/target/product/oriole/ fastboot flashall -w</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">将<span class="variable">$aosp_PATH</span>替换为自己的源码路径</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">-w代表清除用户数据</span></span><br></pre></td></tr></table></figure>
 
-<p>如果不识别设备请更换数据线为usb3.0</p>
+<p>如果不识别设备请更换数据线</p>
 <h1 id="将内核升级到6-1"><a href="#将内核升级到6-1" class="headerlink" title="将内核升级到6.1"></a>将内核升级到6.1</h1><h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/assets/network-asset-asynccode-20250708214615-31bsjt8.png"></p>
 <p>必须是特定的build，这里的build只显示支持的最新版本</p>
 <p><a target="_blank" rel="noopener" href="https://source.android.google.cn/docs/setup/build/building-pixel-kernels?hl=zh-cn#supported-kernel-branches">构建 Pixel 内核  |  Android Open Source Project</a></p>
